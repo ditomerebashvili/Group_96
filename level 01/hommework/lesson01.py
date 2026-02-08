@@ -30,4 +30,4 @@ print(friends_age)
 word1 = "პითონი"
 word2 = "ძალიან"
 word3 = "საინტერესოა"
-print(word1 + " " + word2 + " " + word3)
+print(word1 + " " + word2 + " " + word3) 
