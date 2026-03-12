@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application Form</title>
+</head>
+
+<body>
+
+<h1>Application Form</h1>
+
+<form action="submit.php" method="post">
+
+<!-- First Name -->
+<label>First Name:</label>
+<input type="text" name="firstname">
+
+<!-- Last Name -->
+<label>Last Name:</label>
+<input type="text" name="lastname">
+
+<br><br>
+
+<!-- Age -->
+<label>Age:</label>
+<input type="number" name="age">
+
+<br><br>
+
+<!-- Gender -->
+<label>Gender:</label>
+<select name="gender">
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select>
+
+<!-- Email -->
+<label>Email Address:</label>
+<input type="email" name="email">
+
+<br><br>
+
+<!-- Positions Available -->
+<label>Positions Available:</label>
+
+<input type="radio" name="position" value="junior">
+<label>Junior Developer</label>
+
+<input type="radio" name="position" value="mid">
+<label>Mid-level Developer</label>
+
+<input type="radio" name="position" value="senior">
+<label>Senior Developer</label>
+
+<br><br>
+
+<!-- Programming Languages -->
+<label>Programming Languages:</label>
+
+<input type="checkbox" name="java" value="java">
+<label>Java</label>
+
+<input type="checkbox" name="javascript" value="javascript">
+<label>JavaScript</label>
+
+<input type="checkbox" name="python" value="python">
+<label>Python</label>
+
+<br><br>
+
+<!-- Password -->
+<label>Password:</label>
+<input type="password" name="password">
+
+<label>Confirm Password:</label>
+<input type="password" name="confirm_password">
+
+<br><br>
+
+<!-- Buttons -->
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
+
+
+
+<!--name ატრიბუტი არის ძალიან მნიშვნელოვანი რადგან ის განსაზღვრავს თუ რა სახელით გაიგზავნება მონაცემი სერვერზე,მაგალითად-->
+<!--<input type="text" name="firstname"    თუ მომხმარებელი ჩაწერს Giorgi -ს მონაცემთა ბაზა მიიღებს firstname = Giorgi>-->
+
+
+
+<!--value ატრიბუტი განსაზღვრავს თუ რომელი მნიშვნელობა გაიგზავნება ფორმის გაგზავნის დროს მაგალითად-->
+<!--<input type="radio" name="position" value="junior"   მონაცემთა ბაზაზე გაიგზავნება position = junior>-->
+
+
+
+<!--form submitting ხდება შემდეგნაირად,1-მომხმარებელი ავსებს ფორმას. 2-მომხმარებელი აჭერს submit ღილაკს 3-browser აგზავნის მონაცემებს მონაცემთა ბაზაზე 4-მონაცემთა ბაზა იღებს მონაცემს და ინახავს მას-->
